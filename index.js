@@ -10,6 +10,8 @@ const twilio_url = "https://api.twilio.com/2010-04-01"
 const client = require('twilio')(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN);
 
 
+// Twilio console https://console.twilio.com/?frameUrl=%2Fconsole%3Fx-target-region%3Dus1
+
 app.get("/", (req, res) => {
     res.send(`Server Listen in Port ${PORT}`)
 })
